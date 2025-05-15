@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="1 ATK 1DF "The weakest monster""
+      content="1 ATK 1DF &quot;The weakest monster&quot;"
     />
     <title>Termina Proxy</title>
+
+    <!-- Favicons & Web Manifest -->
+    <link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+    <link rel="manifest" href="/public/site.webmanifest" />
+
     <link rel="stylesheet" href="/style.css" />
     <script src="/chemical.js"></script>
     <script src="/chemical.components.js"></script>
   </head>
   <body>
     <h1>Termina Proxy</h1>
-    <p>
-      Majora was here...
-    </p>
+    <p>Majora was here...</p>
     <input
       autofocus
       spellcheck="false"
@@ -30,12 +36,8 @@
     />
     <section id="controls" is="chemical-controls">
       <button onclick="chemical.componentAction('back', 'web')">Back</button>
-      <button onclick="chemical.componentAction('forward', 'web')">
-        Forward
-      </button>
-      <button onclick="chemical.componentAction('reload', 'web')">
-        Reload
-      </button>
+      <button onclick="chemical.componentAction('forward', 'web')">Forward</button>
+      <button onclick="chemical.componentAction('reload', 'web')">Reload</button>
       <button onclick="chemical.componentAction('close', 'web')">Close</button>
     </section>
     <iframe id="web" data-controls="controls" is="chemical-iframe"></iframe>
