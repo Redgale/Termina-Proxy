@@ -31,8 +31,8 @@
   "overrides": {
     "rimraf": "^4.5.5",
     "glob": "^9.3.5",
-    "source-map-resolve": "^0.7.4",
-    "source-map-url": "^0.5.1",
+    "source-map-resolve": "^0.6.0",
+    "source-map-url": "^0.4.1",
     "npmlog": "^7.0.1",
     "resolve-url": "^0.3.1",
     "are-we-there-yet": "^5.0.2",
