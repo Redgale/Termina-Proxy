@@ -1,16 +1,23 @@
+// index.js
 import { ChemicalServer } from "chemicaljs";
 import express from "express";
 
-const [app, listen] = new ChemicalServer();
+// ChemicalServer() returns [expressApp, listenFn]
+const [app, listen] = ChemicalServer();
 const port = process.env.PORT || 3000;
 
-app.use(express.static("public", {
+// Serve your public folder (index.html by default)
+app.use(
+  express.static("public", {
     index: "index.html",
-    extensions: ["html"]
-}));
+    extensions: ["html"],
+  })
+);
 
+// Attach Chemical’s own routes/middleware
 app.serveChemical();
 
+// Start listening
 listen(port, () => {
-    console.log(`Fancy example listening on port ${port}`);
+  console.log(`🎉 Fancy example listening on http://localhost:${port}`);
 });
